@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/buttons"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score :"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/txtScore"
+        android:textColorHint="@color/titles"
+        android:fontFamily="@font/league_spartan_bold"
+        />
+
+        <TextView
+
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_alignStart="@id/edtScore"
+            android:layout_alignEnd="@id/edtScore"
+            android:layout_centerVertical="true"
+
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/resultScore"
+            android:textColorHint="@color/titles"
+            android:fontFamily="@font/league_spartan_bold"
+           android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/edtScore"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txtScore"
+            android:fontFamily="@font/league_spartan_bold"
+            android:textColor="@color/titles"
+            android:textSize="15dp"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_remove_score_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/imgRemoveBtn"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgAddBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_add_score_button" />
+
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

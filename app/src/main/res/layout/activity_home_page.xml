@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_image"
+     tools:context=".HomePage">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="251dp"
+        android:layout_height="280dp"
+        android:src="@mipmap/start_page_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <ImageView
+        android:id="@+id/imgCurrentAvg"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/circle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Current \n Average"
+        android:fontFamily="@font/league_spartan_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCurrentAvg"
+        app:layout_constraintEnd_toEndOf="@+id/imgCurrentAvg"
+        app:layout_constraintStart_toStartOf="@+id/imgCurrentAvg"
+        app:layout_constraintTop_toTopOf="@+id/imgCurrentAvg"
+        android:id="@+id/txtCurrentAverage"/>
+
+
+
+    <ImageView
+        android:id="@+id/imgEnrolledCourse"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@mipmap/circle_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCurrentAvg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toEndOf="@+id/imgCurrentAvg"
+        app:layout_constraintTop_toTopOf="@+id/imgCurrentAvg"
+        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Enrolled \n Courses"
+        android:fontFamily="@font/league_spartan_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgEnrolledCourse"
+        app:layout_constraintEnd_toEndOf="@+id/imgEnrolledCourse"
+        app:layout_constraintStart_toStartOf="@+id/imgEnrolledCourse"
+        app:layout_constraintTop_toTopOf="@+id/imgEnrolledCourse"
+        android:id="@+id/txtCourseEnrolled"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="258dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

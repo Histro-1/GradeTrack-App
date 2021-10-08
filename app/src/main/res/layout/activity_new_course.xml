@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_Course_Activity">
+    <!-- This is the header card... see layout "header" for more information-->
+    <include
+        android:id="@+id/headerCard"
+        layout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <!-- This is the content for this page of the app (course list page)-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerCard"
+        android:background="@mipmap/inapp_background"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/CourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Course name: "
+            android:textColor="@color/titles" />
+
+        <EditText
+            android:id="@+id/edtCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/CourseName"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/CourseName"
+            android:ems="10"
+            android:fontFamily="@font/league_spartan_bold"
+            android:hint="CS 1027"
+            android:textAlignment="center"
+            android:textColor="@color/titles"
+            android:textColorHint="@color/hint_color" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sendCourseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/titles"
+            android:src="@drawable/ic_send_button"
+            app:rippleColor="@color/buttons"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/titles"
+            android:src="@drawable/ic_cancel_button"
+            app:rippleColor="@color/buttons"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1328125" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/drawable/ic_Load_Screen_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1328125" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_2.xml" value="0.264" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_add_component.xml" value="0.2" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_add_component_score.xml" value="0.152" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_course_components.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_course_list.xml" value="0.2" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_current_average.xml" value="0.136" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/activity_new_course.xml" value="0.2" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/course_components.xml" value="0.264" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/courseitems.xml" value="0.2" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/footer.xml" value="0.2" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/score_entry.xml" value="0.264" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/layout/sub_spinner_component.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1359375" />
+        <entry key="..\:/Users/Chris/AndroidStudioProjects/GradeTrack/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1359375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

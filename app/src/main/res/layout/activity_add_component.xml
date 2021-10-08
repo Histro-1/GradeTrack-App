@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddComponentActivity">
+
+
+    <!-- This is the header card... see layout "header" for more information-->
+    <include
+        android:id="@+id/headerCard"
+        layout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- This is the content for this page of the app (Home page)-->
+
+    <RelativeLayout
+        android:id="@+id/addComponentParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerCard"
+        android:layout_marginTop="0dp"
+        android:background="@mipmap/inapp_background"
+        android:padding="10dp">
+
+
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="CourseName"
+            android:textSize="23sp"
+            />
+
+        <TextView
+            android:id="@+id/componentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtQuizWarning"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Component name: "
+            android:textColor="@color/titles" />
+
+        <TextView
+            android:id="@+id/componentWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtWeightWarning"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Individual Weight: "
+            android:textColor="@color/titles" />
+
+
+        <EditText
+            android:id="@+id/edtComponentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/componentName"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/componentName"
+            android:ems="10"
+            android:fontFamily="@font/league_spartan_bold"
+            android:hint="Quiz"
+            android:textAlignment="center"
+            android:textColor="@color/titles"
+            android:textColorHint="@color/hint_color" />
+
+
+        <EditText
+            android:id="@+id/edtComponentWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/componentWeight"
+            android:layout_alignEnd="@id/edtComponentName"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/componentWeight"
+            android:fontFamily="@font/league_spartan_bold"
+            android:hint= "input 1 for 1% each"
+            android:textAlignment="center"
+            android:textColor="@color/titles"
+            android:textColorHint="@color/hint_color" />
+
+
+        <TextView
+            android:id="@+id/txtEntryExplanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtComponentWeight"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="All sub scores in this component should be the same weight. 5 scores will be 1 % each"
+            android:textAlignment="center"
+            android:textColor="@color/hint_color" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recScores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addScore"
+            android:padding="0dp"/>
+        <!-- Add Course-->
+
+        <include
+            android:id="@+id/addScore"
+            layout="@layout/score_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEntryExplanation"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txtQuizWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseName"
+            android:layout_alignStart="@id/edtComponentName"
+            android:layout_alignEnd="@id/edtComponentName"
+            android:layout_marginTop="0dp"
+            android:text="Enter component name*"
+            android:textAlignment="center"
+            android:textColor="@color/error_color"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtWeightWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtComponentName"
+            android:layout_alignStart="@id/edtComponentName"
+            android:layout_alignEnd="@id/edtComponentName"
+            android:layout_marginTop="0dp"
+            android:text="Enter component weight*"
+            android:textAlignment="center"
+            android:textColor="@color/error_color"
+            android:visibility="gone"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sendComponentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/titles"
+            android:src="@drawable/ic_send_button"
+            app:rippleColor="@color/buttons"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/titles"
+            android:src="@drawable/ic_cancel_button"
+            app:rippleColor="@color/buttons"
+            app:tint="@color/white" />
+
+
+    </RelativeLayout>
+
+
+      </RelativeLayout>
